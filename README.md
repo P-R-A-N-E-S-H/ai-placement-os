@@ -1,60 +1,70 @@
 # 🚀 AI PlacementOS — Autonomous Multi-Agent Career Intelligence & Placement Operating System
 
-> **Enterprise-grade, zero-mock, deterministic-first autonomous career intelligence platform** powered by LangGraph, FastAPI, PostgreSQL (pgvector), Redis, and Next.js 14.
+> **Enterprise-grade, zero-mock, deterministic-first autonomous career intelligence platform** powered by LangGraph, FastAPI, PostgreSQL + pgvector, Redis, and Next.js 14.
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Next.js](https://img.shields.io/badge/Next.js-14+-000000.svg?logo=next.js&logoColor=white)](https://nextjs.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688.svg?logo=fastapi\&logoColor=white)](https://fastapi.tiangolo.com)
+[![Next.js](https://img.shields.io/badge/Next.js-14%2B-000000.svg?logo=next.js\&logoColor=white)](https://nextjs.org)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-FF6F00.svg)](https://langchain-ai.github.io/langgraph/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16_+_pgvector-4169E1.svg?logo=postgresql&logoColor=white)](https://github.com/pgvector/pgvector)
-[![Pytest](https://img.shields.io/badge/Pytest-106%2F106%20Passing-brightgreen.svg?logo=pytest&logoColor=white)](https://pytest.org)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16%20%2B%20pgvector-4169E1.svg?logo=postgresql\&logoColor=white)](https://github.com/pgvector/pgvector)
+[![Pytest](https://img.shields.io/badge/Pytest-106%2F106%20Passing-brightgreen.svg?logo=pytest\&logoColor=white)](https://pytest.org)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
 
-
 ## 🌟 Master 15-Phase Architecture & Completion Matrix
 
-All **15 Phases** are fully implemented with **zero mock data**, deterministic calculations, real-time database state, and bi-directional Career Digital Twin synchronization:
+All **15 phases** are implemented with a deterministic-first architecture, persistent database state, and Career Digital Twin synchronization.
 
-| Phase | Module | Status | Technical Capabilities |
-| :--- | :--- | :---: | :--- |
-| **Phase 1** | **Monorepo & Design System** | ✅ | Next.js 14 App Router, Dark Neon Glassmorphic design tokens, responsive sidebar & headers |
-| **Phase 2** | **Auth & Career Digital Twin** | ✅ | JWT Bearer auth, refresh token rotation, canonical skill graph, confidence-weighted evidence engine |
-| **Phase 3** | **Resume Intel & ATS Engine** | ✅ | PDF/DOCX multi-section extraction, ATS keyword matching, quantification scoring, LaTeX generator |
-| **Phase 4** | **Job Discovery & Ingestion** | ✅ | Multi-provider job scraping (Greenhouse, Lever, LinkedIn), SHA-256 deduplication, skill extraction |
-| **Phase 5** | **Hybrid Matching Engine** | ✅ | 6-factor hybrid match scoring (Dense embeddings + Required + Preferred + Exp + Edu + Project) |
-| **Phase 6** | **Skill Gap Analysis & DAG** | ✅ | Topological sort prerequisite DAG, critical path blockers, estimated effort calculations |
-| **Phase 7** | **Adaptive Learning Roadmap** | ✅ | Milestone sequencing, multi-modal tasks (DSA, Labs, System Design), Twin progress synchronization |
-| **Phase 8** | **DSA Engine & AST Sandbox** | ✅ | Multi-test runner, AST Big-O static complexity analyzer ($O(1)$, $O(N)$, $O(N^2)$, $O(N^3)$), memory & runtime profiling |
-| **Phase 9** | **Mock Interview Simulation** | ✅ | Turn-by-turn simulation, 4-rubric heuristics (STAR structure, Technical depth, Clarity, Tradeoffs) |
-| **Phase 10** | **Hybrid RAG & Knowledge Graph** | ✅ | Recursive semantic chunking, dense cosine similarity, sparse Okapi BM25, RRF ($k=60$), grounded citations |
-| **Phase 11** | **LangGraph Multi-Agent Copilot**| ✅ | Unified StateGraph router executing multi-agent pipelines across Skill Gaps, RAG, Roadmaps, DSA & Interviews |
-| **Phase 12** | **SaaS Dashboard & Pipeline** | ✅ | Application Kanban board, CSV export, interview stage tracking, platform observability metrics |
-| **Phase 13** | **Security Hardening & Guardrails**| ✅ | Token bucket sliding-window rate limiter, AST execution sandbox, prompt injection scanner, PII masking |
-| **Phase 14** | **Evaluation & Benchmark Suite** | ✅ | RAG Faithfulness SLA ($\ge 95\%$), 4-rubric interview calibration, AST complexity profiler benchmarks |
-| **Phase 15** | **Production Readiness & CI/CD** | ✅ | Multi-stage Dockerfiles, Docker Compose stack, GitHub Actions CI/CD matrix, deployment health probes |
+| Phase        | Module                              | Status | Technical Capabilities                                                                                                  |
+| :----------- | :---------------------------------- | :----: | :---------------------------------------------------------------------------------------------------------------------- |
+| **Phase 1**  | **Monorepo & Design System**        |    ✅   | Next.js 14 App Router, dark neon glassmorphic design tokens, responsive sidebar & headers                               |
+| **Phase 2**  | **Auth & Career Digital Twin**      |    ✅   | JWT Bearer authentication, refresh-token rotation, canonical skill graph, confidence-weighted evidence engine           |
+| **Phase 3**  | **Resume Intel & ATS Engine**       |    ✅   | PDF/DOCX multi-section extraction, ATS keyword matching, quantification scoring, LaTeX generator                        |
+| **Phase 4**  | **Job Discovery & Ingestion**       |    ✅   | Multi-provider job ingestion, SHA-256 deduplication, structured job normalization, skill extraction                     |
+| **Phase 5**  | **Hybrid Matching Engine**          |    ✅   | 6-factor hybrid matching using dense embeddings, required skills, preferred skills, experience, education, and projects |
+| **Phase 6**  | **Skill Gap Analysis & DAG**        |    ✅   | Topological prerequisite DAG, critical-path blockers, dependency analysis, estimated effort                             |
+| **Phase 7**  | **Adaptive Learning Roadmap**       |    ✅   | Milestone sequencing, DSA/labs/system-design tasks, Career Twin progress synchronization                                |
+| **Phase 8**  | **DSA Engine & AST Sandbox**        |    ✅   | Multi-test runner, AST-based Big-O analysis, runtime/memory profiling                                                   |
+| **Phase 9**  | **Mock Interview Simulation**       |    ✅   | Turn-by-turn simulation with STAR structure, technical depth, clarity, and tradeoff evaluation                          |
+| **Phase 10** | **Hybrid RAG & Knowledge Graph**    |    ✅   | Semantic chunking, dense cosine similarity, Okapi BM25, RRF, grounded citations                                         |
+| **Phase 11** | **LangGraph Multi-Agent Copilot**   |    ✅   | Unified StateGraph orchestration across Skill Gaps, RAG, Roadmaps, DSA, and Interviews                                  |
+| **Phase 12** | **SaaS Dashboard & Pipeline**       |    ✅   | Application Kanban, CSV export, interview-stage tracking, platform observability                                        |
+| **Phase 13** | **Security Hardening & Guardrails** |    ✅   | Sliding-window rate limiting, AST validation, prompt-injection scanning, PII masking                                    |
+| **Phase 14** | **Evaluation & Benchmark Suite**    |    ✅   | RAG faithfulness evaluation, interview-rubric calibration, AST complexity benchmarks                                    |
+| **Phase 15** | **Production Readiness & CI/CD**    |    ✅   | Multi-stage Dockerfiles, Docker Compose, GitHub Actions CI/CD, deployment health probes                                 |
 
 ---
 
 ## 💎 Signature Platform Highlights
 
-- **🏗️ Project Lab (`/projects`)**: 5 production capstone tracks (Autonomous GraphRAG, Distributed Raft Store, C++20 Limit Order Book, Kubernetes GitOps Engine, CRDT Architecture Studio) with interactive system diagrams, recruiter STAR bullet points, and 1-click Skill Twin evidence sync.
-- **🛡️ GitHub Portfolio Auditor (`/github`)**: Recruiter Quality Score meter (0–100) scoring across README clarity (35%), Architecture docs (25%), CI/CD automation (20%), and Git hygiene (20%) with copyable fixes and PlacementOS Verified README badges.
-- **📊 Applications Pipeline Tracker (`/applications`)**: 1-click Kanban stage advance/rewind steppers, CSV data export for spreadsheet tracking, dynamic salary formatting (USD/INR/EUR), and direct links to mock interview prep.
-- **⚡ AST Big-O Complexity Profiler & DSA Sandbox (`/dsa`)**: In-browser Python code execution with static AST Big-O runtime/memory complexity analysis without external execution vulnerabilities.
-- **🎙️ AI Mock Interview Simulation Studio (`/interview`)**: Interactive turn-by-turn simulation scored against STAR adherence, technical depth, clarity, and architectural tradeoffs.
-- **🧠 Hybrid GraphRAG Retrieval Engine (`/rag`)**: Reciprocal Rank Fusion (RRF $k=60$) combining dense semantic vectors and sparse Okapi BM25 keyword matching with knowledge graph citation verification.
+* **🏗️ Project Lab (`/projects`)**
+  Five production-oriented capstone tracks covering Autonomous GraphRAG, Distributed Raft Store, C++20 Limit Order Book, Kubernetes GitOps Engine, and CRDT Architecture Studio.
 
-----
+* **🛡️ GitHub Portfolio Auditor (`/github`)**
+  Recruiter-oriented repository quality analysis covering README clarity, architecture documentation, CI/CD automation, and Git hygiene.
+
+* **📊 Applications Pipeline Tracker (`/applications`)**
+  Kanban-style application tracking with stage advancement, CSV export, salary formatting, and interview-preparation links.
+
+* **⚡ AST Big-O Complexity Profiler (`/dsa`)**
+  Static Python AST analysis for estimating runtime and memory complexity without executing untrusted code directly inside the API process.
+
+* **🎙️ AI Mock Interview Studio (`/interview`)**
+  Interactive turn-by-turn interview simulation with structured evaluation across STAR adherence, technical depth, clarity, and architectural tradeoffs.
+
+* **🧠 Hybrid GraphRAG Retrieval Engine (`/rag`)**
+  Reciprocal Rank Fusion combining dense semantic retrieval and sparse Okapi BM25 retrieval with knowledge-graph-based citation verification.
+
+---
 
 ## 🏛️ System Architecture
 
 ```mermaid
 graph TD
-   User["👤 Candidate / Placement Aspirant"]\
+    User["👤 Candidate / Placement Aspirant"]
 
-    subgraph Frontend["Frontend Tier (Next.js 14 Standalone)"]
-        WebUI["Web Application (20 Pre-Rendered Routes)"]
+    subgraph Frontend["Frontend Tier — Next.js 14"]
+        WebUI["Web Application"]
         Dashboard["Executive Dashboard & Career Twin"]
         InterviewRoom["Interactive Mock Interview Studio"]
         DSASandbox["DSA Editor & AST Profiler"]
@@ -62,10 +72,10 @@ graph TD
         BenchmarkQA["Evaluation & QA Dashboard"]
     end
 
-    subgraph Backend["Backend API Gateway (FastAPI + LangGraph)"]
-        API["FastAPI 0.115+ Async Core"]
+    subgraph Backend["Backend API Gateway — FastAPI + LangGraph"]
+        API["FastAPI Async API"]
         SecurityMW["Security Headers & Sliding-Window Rate Limiter"]
-        Guardrails["AST Code Sandbox & Prompt Injection Guardrails"]
+        Guardrails["AST Validation & Prompt Injection Guardrails"]
         Orchestrator["LangGraph Multi-Agent Orchestrator"]
 
         subgraph Agents["Specialist Autonomous AI Agents"]
@@ -87,14 +97,86 @@ graph TD
     end
 
     User --> WebUI
+
     WebUI --> API
     API --> SecurityMW
     SecurityMW --> Guardrails
     Guardrails --> Orchestrator
-    Orchestrator --> Agents
-    Agents --> PG
-    Agents --> RedisCache
+
+    Orchestrator --> ResumeAgent
+    Orchestrator --> JobAgent
+    Orchestrator --> MatchEngine
+    Orchestrator --> SkillGapAgent
+    Orchestrator --> RoadmapAgent
+    Orchestrator --> DSAAgent
+    Orchestrator --> InterviewAgent
+    Orchestrator --> RAGAgent
+    Orchestrator --> EvalAgent
+
+    ResumeAgent --> PG
+    JobAgent --> PG
+    MatchEngine --> PG
+    SkillGapAgent --> PG
+    RoadmapAgent --> PG
+    DSAAgent --> PG
+    InterviewAgent --> PG
+    RAGAgent --> PG
+    EvalAgent --> PG
+
+    ResumeAgent --> RedisCache
+    JobAgent --> RedisCache
+    MatchEngine --> RedisCache
+    SkillGapAgent --> RedisCache
+    RoadmapAgent --> RedisCache
+    DSAAgent --> RedisCache
+    InterviewAgent --> RedisCache
+    RAGAgent --> RedisCache
+    EvalAgent --> RedisCache
 ```
+
+---
+
+## 🔄 Autonomous Intelligence Flow
+
+```text
+Candidate
+    │
+    ▼
+Next.js 14 Web Application
+    │
+    ▼
+FastAPI API Gateway
+    │
+    ├── Authentication
+    ├── Security Headers
+    ├── Rate Limiting
+    └── Guardrails
+    │
+    ▼
+LangGraph Supervisor
+    │
+    ├── Resume Intelligence
+    ├── Job Discovery
+    ├── Hybrid Matching
+    ├── Skill Gap Analysis
+    ├── Adaptive Roadmap
+    ├── DSA Analysis
+    ├── Mock Interview
+    ├── Hybrid GraphRAG
+    └── Evaluation
+    │
+    ├───────────────────────┐
+    ▼                       ▼
+PostgreSQL + pgvector     Redis 7
+    │                       │
+    └───────────┬───────────┘
+                ▼
+        Career Digital Twin
+                │
+                ▼
+       Continuous Adaptation
+```
+
 ---
 
 ## 📂 Monorepo Structure
@@ -103,96 +185,397 @@ graph TD
 AI PlacementOS/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml                 # GitHub Actions CI/CD test, lint & build matrix
+│       └── ci.yml
+│
 ├── apps/
-│   ├── api/                       # FastAPI Async Backend
+│   ├── api/
 │   │   ├── app/
-│   │   │   ├── api/v1/endpoints/  # 15 domain REST endpoints (Auth, Twin, RAG, etc.)
-│   │   │   ├── core/              # Security, Database, Rate Limiter, Guardrails
-│   │   │   ├── models/            # SQLAlchemy 2.0 ORM database models
-│   │   │   ├── schemas/           # Pydantic v2 validation schemas
-│   │   │   └── services/          # Deterministic business logic engines
-│   │   ├── scripts/               # Database seeding and health probes
-│   │   ├── tests/                 # 106 unit & integration tests (100% passing)
-│   │   ├── Dockerfile             # Production multi-worker API container
+│   │   │   ├── api/
+│   │   │   │   └── v1/
+│   │   │   │       └── endpoints/
+│   │   │   ├── core/
+│   │   │   ├── models/
+│   │   │   ├── schemas/
+│   │   │   ├── services/
+│   │   │   └── agents/
+│   │   │
+│   │   ├── scripts/
+│   │   ├── tests/
+│   │   ├── Dockerfile
 │   │   └── requirements.txt
 │   │
-│   └── web/                       # Next.js 14 App Router Frontend
+│   └── web/
 │       ├── src/
-│       │   ├── app/               # 20 standalone client pages
-│       │   ├── components/        # Glassmorphic UI components & Sidebar navigation
-│       │   ├── context/           # AuthContext & global state providers
-│       │   └── lib/               # API clients & design tokens
-│       ├── Dockerfile             # Production 3-stage Alpine container
+│       │   ├── app/
+│       │   ├── components/
+│       │   ├── context/
+│       │   └── lib/
+│       ├── Dockerfile
 │       └── package.json
 │
-├── docs/                          # Detailed Phase 1 to 15 walkthrough specifications
+├── docs/
 ├── scripts/
-│   └── healthcheck.py             # Automated service readiness probe
-├── docker-compose.yml             # Complete 4-service production container stack
-├── .env.example                   # Global configuration template
+│   └── healthcheck.py
+│
+├── docker-compose.yml
+├── .env.example
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🛠️ Quick Start Guide
+## 🛠️ Quick Start
 
-### Option 1: Local Development
+### Option 1 — Local Development
 
-#### 1. Backend Setup
+#### 1. Backend
+
 ```bash
 cd apps/api
+
 python -m venv .venv
+```
 
-# Windows:
+**Windows**
+
+```bash
 .venv\Scripts\activate
-# Linux/macOS:
-# source .venv/bin/activate
+```
 
+**Linux/macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
+Start the API:
+
+```bash
 python -m uvicorn app.main:app --reload --port 8000
 ```
-- Interactive Swagger API docs: `http://localhost:8000/docs`
-- Health check: `http://localhost:8000/api/v1/health`
 
-#### 2. Frontend Setup
+Backend:
+
+```text
+http://localhost:8000
+```
+
+Swagger:
+
+```text
+http://localhost:8000/docs
+```
+
+Health check:
+
+```text
+http://localhost:8000/api/v1/health
+```
+
+---
+
+### 2. Frontend
+
+Open another terminal:
+
 ```bash
 cd apps/web
 npm install
 npm run dev
 ```
-- Web Application: `http://localhost:3000`
+
+Frontend:
+
+```text
+http://localhost:3000
+```
 
 ---
 
-### Option 2: Production Deployment with Docker Compose
+## 🐳 Option 2 — Docker Compose
 
-To launch the full containerized stack (PostgreSQL + pgvector, Redis, FastAPI Backend, Next.js Frontend):
+Start the complete stack:
 
 ```bash
 docker compose up --build -d
 ```
 
-Verify service readiness with the built-in health probe:
+Check running containers:
+
+```bash
+docker compose ps
+```
+
+View logs:
+
+```bash
+docker compose logs -f
+```
+
+Run the application health probe:
+
 ```bash
 python scripts/healthcheck.py
 ```
+
+Stop the stack:
+
+```bash
+docker compose down
+```
+
 ---
 
 ## 🧪 Automated Testing & Quality Gating
 
-Execute the complete backend test suite:
+Run the backend test suite:
+
 ```bash
 cd apps/api
-python -m pytest tests/
+python -m pytest tests/ -v
 ```
-Output:
+
+Expected output **only if the repository actually contains and passes these tests**:
+
 ```text
-============================ 106 passed in 48.22s =============================
+============================= test session starts =============================
+...
+============================= XX passed in XX.XXs ==============================
+```
+
+> **Note:** Keep the exact `106 passed in 48.22s` claim only if that result was actually produced by the current repository/CI run. Test counts and execution times can change as the codebase evolves.
+
+---
+
+## 🔐 Security Architecture
+
+PlacementOS follows a defense-in-depth approach:
+
+```text
+Request
+   │
+   ▼
+Authentication
+   │
+   ▼
+Rate Limiting
+   │
+   ▼
+Input Validation
+   │
+   ▼
+Prompt Injection Detection
+   │
+   ▼
+AST Validation
+   │
+   ▼
+Business Logic
+   │
+   ▼
+Database / Cache
+```
+
+Security components include:
+
+* JWT-based authentication
+* Refresh-token rotation
+* Request validation
+* Sliding-window rate limiting
+* Prompt-injection detection
+* PII masking
+* AST-based code validation
+* Isolated code-execution architecture
+* Database-level persistence controls
+
+---
+
+## 🧠 AI Agent Architecture
+
+```text
+                    ┌─────────────────────┐
+                    │   LangGraph Router  │
+                    └──────────┬──────────┘
+                               │
+        ┌──────────┬───────────┼───────────┬───────────┐
+        ▼          ▼           ▼           ▼           ▼
+     Resume      Jobs       Matching    Skill Gap   Roadmap
+       │          │           │           │           │
+       └──────────┴───────────┴───────────┴───────────┘
+                               │
+        ┌──────────────────────┼──────────────────────┐
+        ▼                      ▼                      ▼
+       DSA                 Interview                RAG
+        │                      │                      │
+        └──────────────────────┼──────────────────────┘
+                               ▼
+                       Evaluation Agent
+                               │
+                               ▼
+                     Career Digital Twin
 ```
 
 ---
 
+## 📊 Core Intelligence Pipeline
+
+```text
+Resume
+  │
+  ▼
+Skill Extraction
+  │
+  ▼
+Canonical Skill Graph
+  │
+  ├───────────────┐
+  ▼               ▼
+Job Matching   Skill Gap Analysis
+  │               │
+  ▼               ▼
+Job Ranking    Prerequisite DAG
+                  │
+                  ▼
+             Learning Roadmap
+                  │
+        ┌─────────┼─────────┐
+        ▼         ▼         ▼
+       DSA      Labs    System Design
+        │         │         │
+        └─────────┼─────────┘
+                  ▼
+            Mock Interview
+                  │
+                  ▼
+             Evaluation
+                  │
+                  ▼
+          Career Digital Twin
+```
+
+---
+
+## 📈 Engineering Principles
+
+### Deterministic First
+
+Core calculations should be deterministic wherever possible:
+
+* Skill-gap computation
+* Prerequisite DAG traversal
+* Big-O estimation
+* Job deduplication
+* Matching components
+* RRF ranking
+* Application-state transitions
+* Evaluation metrics
+
+### Zero-Mock Runtime
+
+The production application should not silently fabricate:
+
+* Job listings
+* Candidate information
+* Resume content
+* Interview results
+* Database records
+* RAG citations
+* Evaluation results
+
+If an external dependency is unavailable, the system should expose a clear configuration or service error.
+
+---
+
+## 🧩 Technology Stack
+
+| Layer            | Technology                        |
+| :--------------- | :-------------------------------- |
+| Frontend         | Next.js 14                        |
+| Language         | TypeScript                        |
+| Backend          | FastAPI                           |
+| Backend Language | Python                            |
+| AI Orchestration | LangGraph                         |
+| Database         | PostgreSQL 16                     |
+| Vector Search    | pgvector                          |
+| Cache            | Redis 7                           |
+| ORM              | SQLAlchemy 2.x                    |
+| Validation       | Pydantic v2                       |
+| Testing          | Pytest                            |
+| Containers       | Docker                            |
+| CI/CD            | GitHub Actions                    |
+| Retrieval        | Dense + BM25 + RRF                |
+| Security         | JWT + Guardrails + AST Validation |
+
+---
+
+## 🗺️ Platform Routes
+
+```text
+/
+├── /dashboard
+├── /career-twin
+├── /resume
+├── /jobs
+├── /matching
+├── /skills
+├── /roadmap
+├── /dsa
+├── /interview
+├── /rag
+├── /projects
+├── /github
+├── /applications
+├── /evaluation
+└── /settings
+```
+
+---
+
+## 📌 Project Status
+
+```text
+Architecture       ████████████████████  Complete
+Backend            ████████████████████  Complete
+Frontend           ████████████████████  Complete
+AI Agents          ████████████████████  Complete
+RAG                ████████████████████  Complete
+Security           ████████████████████  Complete
+Testing            ████████████████████  Complete
+Docker             ████████████████████  Complete
+CI/CD              ████████████████████  Complete
+```
+
+> **Status should reflect the current repository and CI results. Update this section whenever implementation changes.**
+
+---
+
+## 🚀 Development Philosophy
+
+AI PlacementOS is designed around four principles:
+
+**1. Intelligence**
+Use specialized agents instead of a single generic AI workflow.
+
+**2. Determinism**
+Keep scoring, graph traversal, ranking, and validation reproducible.
+
+**3. Security**
+Treat resumes, prompts, uploaded code, and external job data as untrusted inputs.
+
+**4. Continuous Career State**
+Synchronize learning, projects, applications, interviews, and skills through a persistent Career Digital Twin.
+
+---
+
 ## 📄 License
-MIT License. Built for placement preparation, skill mastery, and autonomous career acceleration.
+
+MIT License.
+
+Built for placement preparation, skill mastery, engineering experimentation, and autonomous career intelligence.
