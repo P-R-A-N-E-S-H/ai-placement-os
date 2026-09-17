@@ -28,10 +28,21 @@ All **15 Phases** are fully implemented with **zero mock data**, deterministic c
 | **Phase 9** | **Mock Interview Simulation** | ✅ | Turn-by-turn simulation, 4-rubric heuristics (STAR structure, Technical depth, Clarity, Tradeoffs) |
 | **Phase 10** | **Hybrid RAG & Knowledge Graph** | ✅ | Recursive semantic chunking, dense cosine similarity, sparse Okapi BM25, RRF ($k=60$), grounded citations |
 | **Phase 11** | **LangGraph Multi-Agent Copilot**| ✅ | Unified StateGraph router executing multi-agent pipelines across Skill Gaps, RAG, Roadmaps, DSA & Interviews |
-| **Phase 12** | **SaaS Dashboard & Pipeline** | ✅ | Application Kanban board, interview stage tracking, platform observability metrics & velocity counters |
+| **Phase 12** | **SaaS Dashboard & Pipeline** | ✅ | Application Kanban board, CSV export, interview stage tracking, platform observability metrics |
 | **Phase 13** | **Security Hardening & Guardrails**| ✅ | Token bucket sliding-window rate limiter, AST execution sandbox, prompt injection scanner, PII masking |
 | **Phase 14** | **Evaluation & Benchmark Suite** | ✅ | RAG Faithfulness SLA ($\ge 95\%$), 4-rubric interview calibration, AST complexity profiler benchmarks |
 | **Phase 15** | **Production Readiness & CI/CD** | ✅ | Multi-stage Dockerfiles, Docker Compose stack, GitHub Actions CI/CD matrix, deployment health probes |
+
+---
+
+## 💎 Signature Platform Highlights
+
+- **🏗️ Project Lab (`/projects`)**: 5 production capstone tracks (Autonomous GraphRAG, Distributed Raft Store, C++20 Limit Order Book, Kubernetes GitOps Engine, CRDT Architecture Studio) with interactive system diagrams, recruiter STAR bullet points, and 1-click Skill Twin evidence sync.
+- **🛡️ GitHub Portfolio Auditor (`/github`)**: Recruiter Quality Score meter (0–100) scoring across README clarity (35%), Architecture docs (25%), CI/CD automation (20%), and Git hygiene (20%) with copyable fixes and PlacementOS Verified README badges.
+- **📊 Applications Pipeline Tracker (`/applications`)**: 1-click Kanban stage advance/rewind steppers, CSV data export for spreadsheet tracking, dynamic salary formatting (USD/INR/EUR), and direct links to mock interview prep.
+- **⚡ AST Big-O Complexity Profiler & DSA Sandbox (`/dsa`)**: In-browser Python code execution with static AST Big-O runtime/memory complexity analysis without external execution vulnerabilities.
+- **🎙️ AI Mock Interview Simulation Studio (`/interview`)**: Interactive turn-by-turn simulation scored against STAR adherence, technical depth, clarity, and architectural tradeoffs.
+- **🧠 Hybrid GraphRAG Retrieval Engine (`/rag`)**: Reciprocal Rank Fusion (RRF $k=60$) combining dense semantic vectors and sparse Okapi BM25 keyword matching with knowledge graph citation verification.
 
 ---
 
