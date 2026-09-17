@@ -67,7 +67,8 @@ graph TD
         SecurityMW["Security Headers & Sliding-Window Rate Limiter"]
         Guardrails["AST Code Sandbox & Prompt Injection Guardrails"]
         Orchestrator["LangGraph Multi-Agent Orchestrator"]
-        
+
+
         subgraph Agents["Specialist Autonomous AI Agents"]
             ResumeAgent["Resume Intelligence & ATS Agent"]
             JobAgent["Job Discovery & Ingestion Agent"]
