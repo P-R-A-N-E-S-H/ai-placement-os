@@ -178,7 +178,6 @@ Verify service readiness with the built-in health probe:
 ```bash
 python scripts/healthcheck.py
 ```
-
 ---
 
 ## 🧪 Automated Testing & Quality Gating
