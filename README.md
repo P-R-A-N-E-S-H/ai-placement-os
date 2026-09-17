@@ -51,7 +51,7 @@ All **15 Phases** are fully implemented with **zero mock data**, deterministic c
 
 ```mermaid
 graph TD
-    User["👤 Candidate / Placement Aspirant"]\
+   User["👤 Candidate / Placement Aspirant"]\
 
     subgraph Frontend["Frontend Tier (Next.js 14 Standalone)"]
         WebUI["Web Application (20 Pre-Rendered Routes)"]
