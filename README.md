@@ -45,7 +45,7 @@ All **15 Phases** are fully implemented with **zero mock data**, deterministic c
 - **🎙️ AI Mock Interview Simulation Studio (`/interview`)**: Interactive turn-by-turn simulation scored against STAR adherence, technical depth, clarity, and architectural tradeoffs.
 - **🧠 Hybrid GraphRAG Retrieval Engine (`/rag`)**: Reciprocal Rank Fusion (RRF $k=60$) combining dense semantic vectors and sparse Okapi BM25 keyword matching with knowledge graph citation verification.
 
----
+----
 
 ## 🏛️ System Architecture
 
